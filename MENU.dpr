@@ -5,7 +5,10 @@ uses
   uFrmPrincipal in 'uFrmPrincipal.pas' {FrmPrincipal},
   uFrmCadastrocliente in 'uFrmCadastrocliente.pas' {FrmCadastroclientes},
   uFrmBaseGrid in 'uFrmBaseGrid.pas' {frmBaseGrid},
-  uFrmBaseCad in 'uFrmBaseCad.pas' {frmBaseCad};
+  uFrmBaseCad in 'uFrmBaseCad.pas' {frmBaseCad},
+  uFrmListarClientes in 'uFrmListarClientes.pas' {FrmListarClientes},
+  uCliente in 'uCliente.pas',
+  uDM in 'uDM.pas' {DM: TDataModule};
 
 {$R *.res}
 
@@ -13,6 +16,6 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
-  Application.CreateForm(TfrmBaseCad, frmBaseCad);
+  Application.CreateForm(TDM, DM);
   Application.Run;
 end.

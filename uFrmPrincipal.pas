@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus,uFrmCadastrocliente,
-  uFrmBaseGrid;
+  uFrmListarClientes;
 
 type
   TFrmPrincipal = class(TForm)
@@ -29,7 +29,7 @@ implementation
 
 procedure TFrmPrincipal.mniClientesClick(Sender: TObject);
 begin
-   TfrmBaseGrid.abrir;
+   TFrmListarClientes.abrir;
 end;
 
 end.
